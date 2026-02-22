@@ -29,7 +29,13 @@ export default defineConfig([
         sourceType: 'module',
       },
     },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
     rules: {
+      'react/prop-types': 'off',
       'no-unused-vars': ['error', {
         varsIgnorePattern: '^_',
         argsIgnorePattern: '^_'
