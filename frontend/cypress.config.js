@@ -4,8 +4,8 @@ export default defineConfig({
   allowCypressEnv: false,
 
   e2e: {
-    setupNodeEvents(_on, _config) {
-      // implement node event listeners here
+    setupNodeEvents(_on, config) {
+      return config;
     },
   },
 });
