@@ -13,7 +13,7 @@ module.exports = function authMiddleware(req, res, next) {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.user = decoded; // 🔑 CLAVE
     next();
-  } catch (err) {
+  } catch (_err) {
     return res.status(401).json({ error: "Token inválido" });
   }
 };
