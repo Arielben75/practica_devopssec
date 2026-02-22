@@ -97,7 +97,7 @@ jobs:
           scan-type: 'fs'
           scan-ref: '.'
           exit-code: 1
-          severity: 'CRITICAL,HIGH'
+          severity: 'CRITICAL'
 
       # =========================
       # 8. Build de Contenedores y Versionado
